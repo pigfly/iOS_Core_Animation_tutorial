@@ -36,9 +36,8 @@ class CustomView: UIView {
         UIView.animateWithDuration(5.0) { () -> Void in
             self.backgroundColor = UIColor.redColor()
             self.demoView.center = CGPointMake(100, 100)
-            puts("foo")
         }
-        puts("bar")
+        puts("foo bar")
     }
     
     
