@@ -58,11 +58,11 @@
 			children = (
 				140A8FD51CAA497E009CD16A /* AppDelegate.swift */,
 				140A8FD71CAA497E009CD16A /* ViewController.swift */,
+				140A8FE71CAA49BE009CD16A /* CustomView.swift */,
 				140A8FD91CAA497E009CD16A /* Main.storyboard */,
 				140A8FDC1CAA497E009CD16A /* Assets.xcassets */,
 				140A8FDE1CAA497E009CD16A /* LaunchScreen.storyboard */,
 				140A8FE11CAA497E009CD16A /* Info.plist */,
-				140A8FE71CAA49BE009CD16A /* CustomView.swift */,
 			);
 			path = Animation_Helper_API_Explained;
 			sourceTree = "<group>";
@@ -288,6 +288,7 @@
 				140A8FE61CAA497E009CD16A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
