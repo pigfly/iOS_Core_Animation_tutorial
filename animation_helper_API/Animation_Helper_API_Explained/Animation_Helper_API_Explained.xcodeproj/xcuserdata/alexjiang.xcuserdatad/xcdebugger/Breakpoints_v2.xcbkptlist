@@ -10,109 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Animation_Helper_API_Explained/CustomView.swift"
-            timestampString = "480986567.438153"
+            timestampString = "481009469.300501"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "defaultInit()"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Animation_Helper_API_Explained/CustomView.swift"
-            timestampString = "480986568.090443"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "defaultInit()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Animation_Helper_API_Explained/CustomView.swift"
-            timestampString = "480986568.698369"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "defaultInit()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Animation_Helper_API_Explained/CustomView.swift"
-            timestampString = "480988914.25619"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "defaultInit()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Animation_Helper_API_Explained/CustomView.swift"
-            timestampString = "480988916.449874"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "defaultInit()"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Animation_Helper_API_Explained.CustomView.defaultInit (Animation_Helper_API_Explained.CustomView)() -&gt; ()"
-                  moduleName = "Animation_Helper_API_Explained"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexjiang/Documents/Learning/ios-learning/animation/code/animation_helper_API/Animation_Helper_API_Explained/Animation_Helper_API_Explained/CustomView.swift"
-                  timestampString = "480989669.893707"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "640">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Animation_Helper_API_Explained.CustomView.(defaultInit (Animation_Helper_API_Explained.CustomView) -&gt; () -&gt; ()).(closure #1)"
-                  moduleName = "Animation_Helper_API_Explained"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexjiang/Documents/Learning/ios-learning/animation/code/animation_helper_API/Animation_Helper_API_Explained/Animation_Helper_API_Explained/CustomView.swift"
-                  timestampString = "480989669.893859"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
