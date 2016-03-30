@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Animation_Helper_API_Explained/CustomView.swift"
-            timestampString = "481009469.300501"
+            timestampString = "481011447.540985"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "defaultInit()"
             landmarkType = "5">
          </BreakpointContent>
