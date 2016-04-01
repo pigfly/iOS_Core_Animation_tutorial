@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     var gravityBehavior = UIGravityBehavior!()
     var collisionBehavior = UICollisionBehavior!()
     
+    var itemBehavior = UIDynamicItemBehavior!()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,10 +38,19 @@ class ViewController: UIViewController {
         gravityBehavior = UIGravityBehavior.init(items: [square])
         collisionBehavior = UICollisionBehavior.init(items: [square])
         collisionBehavior.translatesReferenceBoundsIntoBoundary = true
+        // each dynamic behavior has an action property
+//        collisionBehavior.action = { print(NSStringFromCGAffineTransform(self.square.transform),
+//                                                     NSStringFromCGPoint(self.square.center))
+//        }
+        
+        // itemBehavior for setting physical properties
+        itemBehavior = UIDynamicItemBehavior.init(items: [square])
+        itemBehavior.elasticity = 0.5
         
         // dynamics only affect views that have been associated with behaviors.
         dynamicAnimator?.addBehavior(gravityBehavior)
         dynamicAnimator?.addBehavior(collisionBehavior)
+        dynamicAnimator?.addBehavior(itemBehavior)
         
         // setup boundary for barrier
         setUpBoundaryForView(barrier)
