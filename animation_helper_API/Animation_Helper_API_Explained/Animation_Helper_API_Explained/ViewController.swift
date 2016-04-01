@@ -42,7 +42,7 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
         
         // itemBehavior for setting physical properties
         itemBehavior = UIDynamicItemBehavior.init(items: [square])
-        itemBehavior.elasticity = 0.6
+        itemBehavior.elasticity = 0.5
         
         // dynamics only affect views that have been associated with behaviors.
         dynamicAnimator?.addBehavior(gravityBehavior)
