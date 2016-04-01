@@ -76,17 +76,9 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
         cloneView.backgroundColor = randomColor()
         view.addSubview(cloneView)
         
-        let gBehavior = UIGravityBehavior.init(items: [cloneView])
-        let cBehavior = UICollisionBehavior.init(items: [cloneView])
-        let iBehavior = UIDynamicItemBehavior.init(items: [cloneView])
-        
-        cBehavior.translatesReferenceBoundsIntoBoundary = true
-        iBehavior.elasticity = 0.8
-        iBehavior.density = 0.2
-        
-        dynamicAnimator?.addBehavior(gBehavior)
-        dynamicAnimator?.addBehavior(cBehavior)
-        dynamicAnimator?.addBehavior(iBehavior)
+        collisionBehavior.addItem(cloneView)
+        gravityBehavior.addItem(cloneView)
+        itemBehavior.addItem(cloneView)
     }
     
     
