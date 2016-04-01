@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollisionBehaviorDelegate {
 
     var square: UIView!
     var barrier: UIView!
@@ -24,12 +24,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // square init
-        square = UIView.init(frame: CGRectMake(100, 100, 100, 100))
+        square = UIView.init(frame: CGRectMake(50, 50, 50, 50))
         square?.backgroundColor = UIColor.greenColor()
         view.addSubview(square)
         
         // barrier init
-        barrier = UIView.init(frame: CGRectMake(0, 300, 130, 20))
+        barrier = UIView.init(frame: CGRectMake(0, 300, 70, 20))
         barrier.backgroundColor = UIColor.grayColor()
         view.addSubview(barrier)
         
@@ -38,14 +38,11 @@ class ViewController: UIViewController {
         gravityBehavior = UIGravityBehavior.init(items: [square])
         collisionBehavior = UICollisionBehavior.init(items: [square])
         collisionBehavior.translatesReferenceBoundsIntoBoundary = true
-        // each dynamic behavior has an action property
-//        collisionBehavior.action = { print(NSStringFromCGAffineTransform(self.square.transform),
-//                                                     NSStringFromCGPoint(self.square.center))
-//        }
+        collisionBehavior.collisionDelegate = self
         
         // itemBehavior for setting physical properties
         itemBehavior = UIDynamicItemBehavior.init(items: [square])
-        itemBehavior.elasticity = 0.5
+        itemBehavior.elasticity = 0.6
         
         // dynamics only affect views that have been associated with behaviors.
         dynamicAnimator?.addBehavior(gravityBehavior)
@@ -69,6 +66,37 @@ class ViewController: UIViewController {
     }
     
     
+    // MARK: - Delegate
+    func collisionBehavior(behavior: UICollisionBehavior, endedContactForItem item: UIDynamicItem, withBoundaryIdentifier identifier: NSCopying?) {
+        let itemView = item as! UIView
+        
+        let cloneViewX = itemView.frame.origin.x
+        let cloneViewY = itemView.frame.origin.y - 60
+        let cloneView = UIView.init(frame: CGRectMake(cloneViewX, cloneViewY, 50, 50))
+        cloneView.backgroundColor = randomColor()
+        view.addSubview(cloneView)
+        
+        let gBehavior = UIGravityBehavior.init(items: [cloneView])
+        let cBehavior = UICollisionBehavior.init(items: [cloneView])
+        let iBehavior = UIDynamicItemBehavior.init(items: [cloneView])
+        
+        cBehavior.translatesReferenceBoundsIntoBoundary = true
+        iBehavior.elasticity = 0.8
+        iBehavior.density = 0.2
+        
+        dynamicAnimator?.addBehavior(gBehavior)
+        dynamicAnimator?.addBehavior(cBehavior)
+        dynamicAnimator?.addBehavior(iBehavior)
+    }
     
+    
+    // MARK: Helper
+    func randomColor() -> UIColor{
+        let red = CGFloat(drand48())
+        let green = CGFloat(drand48())
+        let blue = CGFloat(drand48())
+        
+        return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+    }
 }
 
